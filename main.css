@@ -1,7 +1,7 @@
 :root {
-    --azul: #004d98;
-    --grana: #a50044;
-    --dorado: #edbb00;
+    --blanco: #ffffff;
+    --morado: #1a1740;
+    --dorado: #c19d53;
 }
 
 /* Túnel */
@@ -24,13 +24,13 @@
 body {
     margin: 0; padding: 80px 20px; font-family: 'Arial Black', sans-serif;
     display: flex; flex-direction: column; align-items: center;
-    min-height: 100vh; background-color: var(--azul);
+    min-height: 100vh; background-color: var(--blanco);
     transition: background-color 1s ease; overflow-y: auto;
 }
 
 #notificacion {
     position: fixed; top: 20px; right: 20px;
-    background: white; border-right: 5px solid var(--grana);
+    background: white; border-right: 5px solid var(--morado);
     padding: 10px 15px; border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     z-index: 100; font-size: 0.8rem; max-width: 250px;
@@ -46,13 +46,13 @@ body {
 
 .stripe-bg {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
-    background: repeating-linear-gradient(90deg, var(--azul), var(--azul) 20%, var(--grana) 20%, var(--grana) 40%);
+    background: repeating-linear-gradient(90deg, #f4f4f6, #f4f4f6 20%, var(--blanco) 20%, var(--blanco) 40%);
     transition: opacity 1s ease;
 }
 
 .card {
     background-color: #ffffff; padding: 30px; border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.6); text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2); text-align: center;
     max-width: 320px; border: 6px solid var(--dorado); position: relative; margin-bottom: 60px;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 .carnet-socio {
-    background: linear-gradient(135deg, var(--azul), var(--grana));
+    background: linear-gradient(135deg, var(--morado), #343075);
     color: white; padding: 10px; border-radius: 8px; margin: 15px 0;
     font-family: sans-serif; font-size: 0.7rem; text-align: left;
     border: 1px solid var(--dorado);
@@ -83,7 +83,7 @@ body {
     margin: 20px 0; border: 2px solid #ddd; border-radius: 10px;
     overflow: hidden; font-family: sans-serif; background: #f9f9f9;
 }
-.ticket-header { background: var(--azul); color: white; font-size: 0.7rem; padding: 5px; }
+.ticket-header { background: var(--morado); color: white; font-size: 0.7rem; padding: 5px; }
 .ticket-body { padding: 10px; font-size: 0.75rem; color: #333; text-align: left; }
 .ticket-body p { margin: 3px 0; }
 
@@ -99,8 +99,8 @@ body {
 }
 
 .contrato { margin-top: 25px; border: 1px dashed #ddd; padding: 15px; background: #fdfdfd; }
-.linea-firma { border-bottom: 2px solid var(--azul); width: 120px; margin: 5px auto; height: 10px; }
-.nombre-firma { font-size: 0.9rem; color: var(--grana); margin: 0; font-family: cursive; font-style: italic; }
+.linea-firma { border-bottom: 2px solid var(--morado); width: 120px; margin: 5px auto; height: 10px; }
+.nombre-firma { font-size: 0.9rem; color: var(--morado); margin: 0; font-family: cursive; font-style: italic; }
 
 .confeti {
     position: fixed; width: 10px; height: 10px; z-index: 100;
@@ -117,32 +117,32 @@ body {
     100% { background-color: var(--dorado); }
 }
 
-.progress-container { margin: 20px 0; font-size: 0.8rem; color: var(--azul); }
+.progress-container { margin: 20px 0; font-size: 0.8rem; color: var(--morado); }
 .progress-bar { background: #eee; border-radius: 20px; height: 18px; width: 100%; overflow: hidden; }
-.progress-fill { background: linear-gradient(90deg, var(--azul), var(--grana)); width: 100%; height: 100%; animation: cargaBarra 3s ease-in-out; }
+.progress-fill { background: linear-gradient(90deg, var(--morado), var(--dorado)); width: 100%; height: 100%; animation: cargaBarra 3s ease-in-out; }
 
 .escudo-minimalista {
     width: 60px; height: 60px; background: var(--dorado); margin: -60px auto 15px auto;
     border-radius: 0 0 30px 30px; border: 3px solid white; display: flex; justify-content: center; align-items: center; z-index: 2;
 }
 
-button { background-color: var(--azul); color: white; border: none; padding: 15px 20px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 100%; text-transform: uppercase; }
-.btn-secundario { background: transparent; color: var(--azul); border: 1px solid var(--azul); padding: 8px; font-size: 0.7rem; margin-top: 15px; cursor: pointer; border-radius: 4px; width: auto; }
+button { background-color: var(--morado); color: white; border: none; padding: 15px 20px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 100%; text-transform: uppercase; }
+.btn-secundario { background: transparent; color: var(--morado); border: 1px solid var(--morado); padding: 8px; font-size: 0.7rem; margin-top: 15px; cursor: pointer; border-radius: 4px; width: auto; }
 
 .marquee {
-    position: fixed; bottom: 0; left: 0; width: 100%; background: var(--grana); color: white; overflow: hidden; padding: 8px 0; font-size: 0.9rem; font-weight: bold; z-index: 10;
+    position: fixed; bottom: 0; left: 0; width: 100%; background: var(--morado); color: white; overflow: hidden; padding: 8px 0; font-size: 0.9rem; font-weight: bold; z-index: 10;
 }
 .marquee p { display: inline-block; white-space: nowrap; animation: scroll 18s linear infinite; margin: 0; }
 @keyframes scroll { from { transform: translateX(100%); } to { transform: translateX(-100%); } }
 
 .sello-oficial {
-    border: 2px solid var(--grana); color: var(--grana); padding: 5px 10px; border-radius: 5px; display: inline-block; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; transform: rotate(-10deg); margin: 20px 0; opacity: 0.8;
+    border: 2px solid var(--dorado); color: var(--dorado); padding: 5px 10px; border-radius: 5px; display: inline-block; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; transform: rotate(-10deg); margin: 20px 0; opacity: 0.8;
 }
 
 .hidden { display: none; }
 #resultado { margin-top: 20px; animation: aparecer 0.8s ease-out forwards; }
-.score { font-size: 2rem; color: var(--azul); font-weight: bold; }
+.score { font-size: 2rem; color: var(--morado); font-weight: bold; }
 .stats { margin: 15px 0; font-size: 0.85rem; border-top: 1px solid #eee; padding-top: 10px; }
 .stat-row { display: flex; justify-content: space-between; padding: 5px 0; color: #444; }
-.final-msg { color: var(--grana); font-weight: bold; font-size: 1.1rem; margin-top: 10px; padding-bottom: 20px; }
+.final-msg { color: var(--morado); font-weight: bold; font-size: 1.1rem; margin-top: 10px; padding-bottom: 20px; }
 @keyframes aparecer { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
