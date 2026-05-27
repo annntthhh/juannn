@@ -17,7 +17,7 @@ function lanzarConfeti() {
         const confeti = document.createElement('div');
         confeti.className = 'confeti';
         confeti.style.left = Math.random() * 100 + 'vw';
-        confeti.style.backgroundColor = Math.random() > 0.5 ? '#004d98' : '#a50044';
+        confeti.style.backgroundColor = Math.random() > 0.5 ? '#1a1740' : '#c19d53';
         confeti.style.top = '-10px';
         document.body.appendChild(confeti);
         setTimeout(() => confeti.remove(), 3000);
@@ -37,7 +37,7 @@ boton.addEventListener('click', function() {
     boton.style.display = 'none';
     
     setTimeout(() => {
-        document.body.style.backgroundColor = "#edbb00"; 
+        document.body.style.backgroundColor = "#c19d53"; 
         fondoRayado.style.opacity = "0.1"; 
         notificacion.classList.remove('hidden-notif');
     }, 600);
